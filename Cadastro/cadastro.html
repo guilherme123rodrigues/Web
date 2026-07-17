@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+
+        <link rel="stylesheet" href="./cadastro.css">
+    </head>
+    <body>
+
+        <div>
+
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input id="idade" type="number" name="idade" required>
+
+            <label for="telefone">Telefone:</label>
+            <input id="telefone" type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx" class="tel">
+
+            <label for="data-nascimento">Data de nascimento:</label>
+            <input id="data-nascimento" type="date" name="data de nascimento" required class="date">
+
+            <div class="segunda-linha">
+                <label for="e-mail">E-mail:</label>
+                <input id="e-mail" type="email" name="e-mail" required placeholder="seue-mail@dominio.com">
+
+                <label for="senha">Senhas de 5 digitos:</label>
+                <input id="senha" type="password" name="senha" required>
+            </div>
+            
+            <input type="submit" class="enviar">
+            
+        </div>
+
+    </body>
+</html>
