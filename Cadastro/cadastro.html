@@ -9,31 +9,72 @@
     </head>
     <body>
 
-        <div>
+        <header>
+            <h1>&copy; Sistema atualizado na versão Beta</h1>
+        </header>
 
-            <label for="nome">Nome:</label>
-            <input id="nome" type="text" name="nome" required>
+        <main>
+            <div class="cad">
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="nome" required>
 
-            <label for="idade">Idade:</label>
-            <input id="idade" type="number" name="idade" required>
+                    <label for="idade">Idade:</label>
+                    <input id="idade" type="number" name="idade" required class="idade">
 
-            <label for="telefone">Telefone:</label>
-            <input id="telefone" type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx" class="tel">
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx" class="tel">
 
-            <label for="data-nascimento">Data de nascimento:</label>
-            <input id="data-nascimento" type="date" name="data de nascimento" required class="date">
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input id="data-nascimento" type="date" name="data de nascimento" required class="date">
 
-            <div class="segunda-linha">
-                <label for="e-mail">E-mail:</label>
-                <input id="e-mail" type="email" name="e-mail" required placeholder="seue-mail@dominio.com">
+                    <div class="segunda-linha">
+                        <label for="e-mail">E-mail:</label>
+                        <input id="e-mail" type="email" name="e-mail" required placeholder="seue-mail@dominio.com">
 
-                <label for="senha">Senhas de 5 digitos:</label>
-                <input id="senha" type="password" name="senha" required>
+                        <label for="senha">Senhas de 5 digitos:</label>
+                        <input id="senha" type="password" name="senha" required class="senha">
+                    </div>
+                    
+                    <div class="grad">
+                        <p>Tem alguma graduação?</p>
+
+                        <nav>
+                            <label>
+                                <input type="radio" name="gradu" required>
+                                Sim
+                            </label>
+
+                            <label>Qual?</label>
+                            <textarea cols="30" rows="1">
+                            </textarea>   
+
+                            <label>
+                                <input id="Não" type="radio" name="gradu" required>
+                                Não
+                            </label>
+                        </nav>
+
+                        <p>Bebidas/Drogas</p>
+
+                        <nav>
+                            <lanel>
+                                <input type="checkbox" name="
+                                sim">
+                            </lanel>
+                        </nav>
+                        
+                    </div>
+
+                    <input type="submit" class="enviar">
+                </form>
             </div>
-            
-            <input type="submit" class="enviar">
-            
-        </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Criado em 2026</p>
+        </footer>
 
     </body>
 </html>
