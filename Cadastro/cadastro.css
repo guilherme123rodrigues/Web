@@ -18,7 +18,7 @@ body {
 }
 
 p {
-    color: blue;
+    color: rgb(224, 224, 226);
 }
 
 .cad {
@@ -28,6 +28,10 @@ p {
     font-size: 20px;
     padding: 15px;
     margin: 2px 0;
+}
+
+.cad legend {
+    color: greenyellow;
 }
 
 .idade {
@@ -55,34 +59,37 @@ input {
     margin: 0 15px 0 0;
     font-size: 17px;
     width: 25%;
+
 }
 
-.enviar {
-    margin: 40px 0 5px 15px;
-    border-radius: 5px;
-    width: 10%;
-    height: 40px;
-    cursor: pointer;
-}
-
-.grad {
-    background-color: antiquewhite;
+.cursos {
     color: black;
-    padding:  0 5px;
+    display: iniline-block;
 }
 
-.grad label {
-    display: block;
-    margin: 15px 0px;
-}
-
-.grad input {
-    margin: 0;
-    width: 5%;
-}
-
-.grad textarea {
+#cursos {
+    width: 300px;
     font-size: 20px;
+    margin: 0;
+}
+
+.escola {
+    color: black;
+}
+
+.escola textarea {
+    height: 20px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.escola fieldset {
+    padding-bottom: 12px;
+}
+
+#esperiencia {
+    font-size: 20px;
+    margin: 0;
 }
 
 nav {
@@ -93,10 +100,32 @@ nav label {
     display: inline-block;
 }
 
+.data-ini fieldset {
+    margin-top: 0;
+}
+
+.date-inicio {
+    width: 80%;
+}
+
+.data-terminio {
+    width: 80%;
+}
+
+
 .enviar:hover {
     font-size: 20px;
     font-weight: bold;
     color: green;
+}
+
+
+.enviar {
+    margin: 40px 0 5px 15px;
+    border-radius: 5px;
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
 }
 
 footer {
@@ -105,5 +134,4 @@ footer {
     font-size: 20px;
     color: whitesmoke;
     padding: 20px 0 100px 0;
-
 }

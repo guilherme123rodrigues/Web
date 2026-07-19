@@ -16,60 +16,79 @@
         <main>
             <div class="cad">
                 <form>
-                    <label for="nome">Nome:</label>
-                    <input id="nome" type="text" name="nome" required>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" name="nome" required>
 
-                    <label for="idade">Idade:</label>
-                    <input id="idade" type="number" name="idade" required class="idade">
+                        <label for="idade">Idade:</label>
+                        <input id="idade" type="number" name="idade" required class="idade">
 
-                    <label for="telefone">Telefone:</label>
-                    <input id="telefone" type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx" class="tel">
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx" class="tel">
 
-                    <label for="data-nascimento">Data de nascimento:</label>
-                    <input id="data-nascimento" type="date" name="data de nascimento" required class="date">
+                        <label for="data-nascimento">Data de nascimento:</label>
+                        <input id="data-nascimento" type="date" name="data de nascimento" required class="date">
 
-                    <div class="segunda-linha">
-                        <label for="e-mail">E-mail:</label>
-                        <input id="e-mail" type="email" name="e-mail" required placeholder="seue-mail@dominio.com">
+                        <div class="segunda-linha">
+                            <label for="e-mail">E-mail:</label>
+                            <input id="e-mail" type="email" name="e-mail" required placeholder="seue-mail@dominio.com">
 
-                        <label for="senha">Senhas de 5 digitos:</label>
-                        <input id="senha" type="password" name="senha" required class="senha">
-                    </div>
-                    
-                    <div class="grad">
-                        <p>Tem alguma graduação?</p>
+                            <label for="senha">Senhas de 5 digitos:</label>
+                            <input id="senha" type="password" name="senha" required class="senha">
+                        </div>
+                    </fieldset>
 
-                        <nav>
-                            <label>
-                                <input type="radio" name="gradu" required>
-                                Sim
-                            </label>
+                    <nav class="cursos">
+                        <fieldset>
+                            <legend>Cursos</legend>
+                            <select id="cursos">
+                                <option>Graduação</option>
+                                <option>Pós</option>
+                                <option>Curso tecnico</option>
+                                <option>Nenhum</optgroup>
+                            </select>
+                        </fieldset>    
+                    </nav>
 
-                            <label>Qual?</label>
-                            <textarea cols="30" rows="1">
-                            </textarea>   
+                    <nav class="escola">
+                        <fieldset id="escola">
+                            <legend>Instituição de estudo</legend>
+                            <textarea cols="30" role="1"></textarea>
+                        </fieldset>
+                    </nav>
 
-                            <label>
-                                <input id="Não" type="radio" name="gradu" required>
-                                Não
-                            </label>
-                        </nav>
+                    <nav class="esperiencia">
+                        <fieldset>
+                            <legend>Esperiencia proficial</legend>
+                            <select id="esperiencia">
+                                <option>Menos de 1 ano</option>
+                                <option>1 a 2 anos</option>
+                                <option>2 a 3 anos</option>
+                                <option>3 a 4 anos</option>
+                                <option>Mais de 4 anos</option>
+                                <option>Não tenho esperiência</option>
+                            </select>
+                        </fieldset>
+                    </nav>
 
-                        <p>Bebidas</p>
+                    <nav class="data-ini">
+                        <fieldset>
+                            <legend>inicio dos estudos</legend>
+                            <label for="inicio"></label>
+                            <input id="inicio" type="date" name="inicio-estudos" class="date-inicio" required>
+                        </fieldset>
+                    </nav>
 
-                        <nav>
-                            
-                        </nav>
+                    <nav class="data-termi">
+                        <fieldset>
+                            <legend>Data de terminio</legend>
+                            <label for="terminio"></label>
+                            <input id="terminio" type="date" name="data-terminio" class="data-terminio" required>
+                        </fieldset>
+                    </nav>
 
-                        <nav>
-                            <lanel>
-                                <input type="checkbox" name="
-                                sim">
-                            </lanel>
-                        </nav>
-                        
-                    </div>
-
+                    <br>
                     <input type="submit" class="enviar">
                 </form>
             </div>
