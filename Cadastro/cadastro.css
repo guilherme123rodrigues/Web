@@ -65,6 +65,7 @@ input {
 .cursos {
     color: black;
     display: iniline-block;
+    width: 100px;
 }
 
 #cursos {
